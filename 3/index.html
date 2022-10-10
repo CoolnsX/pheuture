@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body style="display:device-width;">
+    <div style="text-align:center;">
+    <h1>Register Now</h1>
+      <form action = "info.php" method = "POST" enctype="multipart/form-data">
+         Name: <input type = "text" name = "name" placeholder="your name" /><br><br>
+         Password: <input type = "password" name = "password"/><br><br>
+         Age: <input type = "text" name = "age" /><br><br>
+         Email: <input type = "email" name = "email" /><br><br>
+         Gender: <input type = "radio" name = "gender" value="male"/>Male 
+         <input type = "radio" name = "gender" value="female" />Female<br><br>
+         Country: <select name="country">
+            <option value=""></option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Germany">Germany</option>
+            <option value="Japan">Japan</option>
+         </select><br><br>
+         <input type = "file" name="files" accept="document"/>
+         <input type = "submit" name="register"/>
+      </form>
+    </div>
+</body>
+</html>
